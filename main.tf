@@ -4,3 +4,7 @@ resource "aws_s3_bucket" "this" {
         enabled = var.enable_versioning
     }
 }
+
+resource "confluentcloud_environment" "test" {
+  name = "parkside-test"
+}
