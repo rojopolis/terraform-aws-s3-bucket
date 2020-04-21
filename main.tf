@@ -8,3 +8,7 @@ resource "aws_s3_bucket" "this" {
 resource "confluentcloud_environment" "test" {
   name = "parkside-test"
 }
+
+data "onepassword_group" "this" {
+    name = "exist-group"
+}
